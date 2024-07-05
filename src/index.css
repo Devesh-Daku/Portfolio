@@ -1,13 +1,94 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+/* .happy-monkey */
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+.happy-monkey{
+  font-family: "Happy Monkey", system-ui;
+}
+/* ga mamali */
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.ga-maamli {
+  font-family: "Ga Maamli", sans-serif;
+  font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.findb{
+  /* border: 2px solid blue ; */
+}
+.findg{
+  /* border: 2px solid green; */
+}
+.findr{
+  /* border: 2px solid red; */
+}
+*{
+  margin: 0;
+  padding: 0;
+  /* offwhite */
+  color: #f2f2f2;
+  /* light grey  */
+  /* color: #cccccc; */
+  /* lightblue */
+  /* neone green  */
+  /* yellow */
+  /* color: #ffff00; */
+  
+  
+}
+
+.color-lightblue{
+  color: #add8e6;
+}
+.color-skin{
+  color: #8d828a;
+}
+.color-neone{
+  color: #39ff14;
+}
+.bg_neon{
+  background: #39ff14;
+}
+.App{}
+.borderNeone{
+  border: .5rem solid #39ff14;
+}
+.NavBtn{
+  /* border-radius: 40px; */
+}
+.Gradiant{
+  /* border: 2px solid red; */
+  background: linear-gradient(135deg, rgba(54, 78, 112, 0.7) 0%, rgba(54, 78, 112, 0.5) 25%, rgba(54, 78, 112, 0.3) 50%, rgba(54, 78, 112, 0.1) 75%, rgba(54, 78, 112, 0) 100%);  /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.267),rgba(255, 255, 255, 0.158) , rgba(255, 255, 255, 0.089), rgba(255, 255, 255, 0.014),rgba(0, 0, 0, 0));  */
+}
+.Navbar::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    background: black ;
+    height: 95%;
+    width: 99%;
+    z-index: -1;
+    opacity: .8;
+    margin: .5%;
+    border-radius: 1%;
+    /* box-shadow: 0 0 16px black; */
+
+}
+.NavGradiant{
+  background: linear-gradient(90deg, #39ff14 0% , green 2.5% , #161f2d 10%,#161f2d 90%, green 97.5%, #39ff14 100%);
+  /* border-color: #39ff14 ; */
+  border-image: linear-gradient(45deg, #39ff14 0%, #ffffff 15%,#ffffff 95%, #39ff14 100% ) 1;
+}
+.bgImg{
+  background: url('./Assets/PORTFOLIO\ -\ 2020.jpeg') no-repeat center center/cover ;
+  
 }
