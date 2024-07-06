@@ -66,7 +66,9 @@
 }
 .Gradiant{
   /* border: 2px solid red; */
+
   background: linear-gradient(135deg, rgba(54, 78, 112, 0.7) 0%, rgba(54, 78, 112, 0.5) 25%, rgba(54, 78, 112, 0.3) 50%, rgba(54, 78, 112, 0.1) 75%, rgba(54, 78, 112, 0) 100%);  /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.267),rgba(255, 255, 255, 0.158) , rgba(255, 255, 255, 0.089), rgba(255, 255, 255, 0.014),rgba(0, 0, 0, 0));  */
+  
 }
 .Navbar::before{
     content: "";
@@ -89,6 +91,5 @@
   border-image: linear-gradient(45deg, #39ff14 0%, #ffffff 15%,#ffffff 95%, #39ff14 100% ) 1;
 }
 .bgImg{
-  background: url('./Assets/PORTFOLIO\ -\ 2020.jpeg') no-repeat center center/cover ;
   
 }
